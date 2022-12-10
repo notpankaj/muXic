@@ -3,7 +3,7 @@ import React from 'react';
 
 const DetailScreen = () => {
   return (
-    <View>
+    <View style={{flex: 1, backgroundColor: 'pink'}}>
       <Text>DetailScreen</Text>
     </View>
   );

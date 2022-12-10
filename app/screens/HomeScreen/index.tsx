@@ -14,6 +14,8 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {MainStackNavigatorParamList} from '../../navigation/MainStack';
 import {SCREEN_LIST} from './data';
 import SongFragment from './SongFragment';
+import ArtistFragment from './ArtistFragment';
+import WordGridModal from '../../modal/WordGridModal';
 
 type HomeScreenNavigationProp =
   NativeStackNavigationProp<MainStackNavigatorParamList>;
@@ -43,6 +45,7 @@ const HomeScreen = () => {
   }
   return (
     <View style={styles.container}>
+      <WordGridModal />
       <FlatList
         ref={topRef}
         data={SCREEN_LIST}
@@ -93,6 +96,9 @@ const HomeScreen = () => {
           if (item === SCREEN_LIST[0]) {
             return <SongFragment />;
           }
+          if (item === SCREEN_LIST[3]) {
+            return <ArtistFragment />;
+          }
           return (
             <View
               style={{
@@ -117,6 +123,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width,
     backgroundColor: COLORS.bgBlack,
+    // backgroundColor: '#000',
   },
   headerWrapper: {
     height: 100,

@@ -26,7 +26,6 @@ const MainStack = () => {
       }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="PlayerScreen" component={PlayerScreen} />
-      <Stack.Screen name="DetailScreen" component={DetailScreen} />
     </Stack.Navigator>
   );
 };

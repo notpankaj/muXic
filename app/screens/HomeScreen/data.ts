@@ -1,8 +1,7 @@
 export const SCREEN_LIST = [
   'songs',
-  'artist',
-  'playlist',
-  'genere',
-  'ablum',
-  'recent',
+  'genres',
+  'playlists',
+  'artists',
+  'ablums',
 ];

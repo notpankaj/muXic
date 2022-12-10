@@ -35,6 +35,7 @@ const SongFragment = () => {
         data={musicStorage}
         initialNumToRender={50}
         keyExtractor={item => item.idx}
+        contentContainerStyle={{paddingHorizontal: 5, paddingBottom: 25}}
         ListEmptyComponent={() => {
           return (
             <Text style={{color: 'white'}}>
@@ -73,7 +74,8 @@ const styles = StyleSheet.create({
     marginRight: 30,
   },
   listText: {
-    fontSize: 15,
+    fontSize: 20,
+    marginRight: 10,
     fontFamily: FONTS.Regular,
     color: COLORS.textWhite,
   },
